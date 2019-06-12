@@ -1,0 +1,113 @@
+.navContainer{
+    background: ghostwhite;
+    border-bottom:1px solid rgb(224, 224, 226);
+    -webkit-box-shadow: -1px 0px 40px 0px rgba(166,166,166,1);
+    -moz-box-shadow: -1px 0px 40px 0px rgba(166,166,166,1);
+    box-shadow: -1px 0px 40px 0px rgba(166,166,166,1);
+    position: sticky;
+    top:0;
+    left:0;
+    z-index:2000;
+    padding:5px 0;
+}
+.nav{
+    width:90%;
+    max-width: 100%;
+    height:4rem;
+    margin:0 auto;
+    display:flex;
+    justify-content: start;
+    align-items: center;
+}
+.item1{
+    margin-right:3.5rem;
+    font-weight: 600;
+    position: relative;
+}
+.downIcon{
+    position: absolute;
+    top:80%;
+    transform: translateY(-80%);
+    font-size: 13px;
+}
+.navItem{
+    margin-left:3rem;;
+}
+.course{
+    margin-right:3.5rem;
+    font-weight: 600;
+}
+.nav.sticky{
+    background: red;
+}
+.search{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width:20rem;
+    border:1px solid #3f4453;
+    padding:8px 0;
+    border-radius:7px;
+}
+.login{
+    display:flex;
+    align-items: center;
+    width:10rem;
+}
+.input{
+    font-size:16px;
+    border:none;
+    width:80%;
+}
+.input:focus{
+    outline:none;
+}
+.searchIcon{
+    margin-right:18px;
+}
+.logo{
+    width:10rem;
+}
+@media only screen and (max-width: 1300px) {
+   .nav{
+       width:950px;
+   }
+}
+@media only screen and (max-width: 1040px) {
+    .nav{
+        width:900px;
+    }
+    .adamsacademyLogo{
+        width:8rem;
+    }
+ }
+ @media only screen and (max-width: 970px) {
+    .nav{
+        width:700px;
+    }
+    .courses{
+        font-size: 15px;
+    }
+    .fontawesome{
+        font-size:12px;
+        margin-left:15px;
+    }
+
+ }
+ @media only screen and (max-width:750px) {
+    .nav{
+        width:600px;
+    }
+ }
+
+ @media only screen and (max-width:650px) {
+    .allCourses{
+        display:none;
+    }
+    .login{
+        display:none;
+    }
+    .nav{
+        width:400px;
+    }
+ }

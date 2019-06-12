@@ -1,0 +1,22 @@
+.home{
+    height:105vh;
+    width:100vw;
+}
+.sloganContainer{
+    width:38rem;
+    position: absolute;
+    top:50%;
+    left:5%;
+    transform: translate(-5%,-50%);
+}
+.sloganText{
+    text-align: left;
+    margin-left: 2rem;
+    line-height: 25px;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: absolute;
+}
+
+
