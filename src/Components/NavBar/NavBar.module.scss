@@ -11,6 +11,7 @@
     padding:5px 0;
 }
 .nav{
+    position: relative;
     width:90%;
     max-width: 100%;
     height:4rem;
@@ -31,7 +32,9 @@
     font-size: 13px;
 }
 .navItem{
-    margin-left:3rem;;
+    display: flex;
+    align-items: center;
+    margin-left:3rem;
 }
 .course{
     margin-right:3.5rem;
@@ -68,47 +71,70 @@
 .logo{
     width:10rem;
 }
-@media only screen and (max-width: 1300px) {
-   .nav{
-       width:950px;
-   }
+.signinsignup {
+    position: absolute;
+    right: 0;
+    display: flex;
+    width:10rem;
 }
-@media only screen and (max-width: 1040px) {
-    .nav{
-        width:900px;
-    }
-    .adamsacademyLogo{
-        width:8rem;
-    }
- }
- @media only screen and (max-width: 970px) {
-    .nav{
-        width:700px;
-    }
-    .courses{
-        font-size: 15px;
-    }
-    .fontawesome{
-        font-size:12px;
-        margin-left:15px;
-    }
 
- }
- @media only screen and (max-width:750px) {
-    .nav{
-        width:600px;
-    }
- }
+.login {
+    background: none;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-right: .5rem;
+    cursor: pointer;
+    flex: 1;
+}
 
- @media only screen and (max-width:650px) {
-    .allCourses{
-        display:none;
-    }
-    .login{
-        display:none;
-    }
-    .nav{
-        width:400px;
+.signUp {
+    flex: 1;
+    padding: 5px 15px;
+    background: #ca3e47;
+    border: none;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+}
+.signUp:hover{
+    background: #d3454f;
+}
+// @media only screen and (max-width: 1300px) {
+//    .nav{
+//        width:950px;
+//    }
+// }
+// @media only screen and (max-width: 1040px) {
+//     .nav{
+//         width:900px;
+//     }
+//     .adamsacademyLogo{
+//         width:8rem;
+//     }
+//  }
+//  @media only screen and (max-width: 970px) {
+//     .nav{
+//         width:700px;
+//     }
+//     .courses{
+//         font-size: 15px;
+//     }
+//     .fontawesome{
+//         font-size:12px;
+//         margin-left:15px;
+//     }
+
+//  }
+//  @media only screen and (max-width:750px) {
+//     .nav{
+//         width:600px;
+//     }
+//  }
+
+ @media only screen and (max-width:1050px) {
+    .navItem>span{
+        margin-right:2rem;
     }
  }
 

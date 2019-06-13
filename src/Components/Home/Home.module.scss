@@ -2,49 +2,60 @@
     height:100vh;
     width:100vw;
     position: relative;
+    background: linear-gradient(to left, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.5) 3%,rgba(0,0,0,0) 100%);
+    display: flex;
+    -webkit-clip-path: polygon(0 0, 100% 0%, 100% 98%, 0% 100%);
+    clip-path: polygon(0 0, 100% 0%, 100% 98%, 0% 100%);
+}
+.firstPart{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.firstPartInfo{
+    position: relative;
+    width:80%;
+    height:20rem;
+    align-items: center;
+}
+.secondPart{
+    flex: 1;
 }
 .sloganContainer{
-    width:38rem;
-    position: absolute;
-    top:30%;
-    left:5%;
+    width:100%;
     transform: translate(-5%,-30%);
 }
 .sloganText{
     text-align: left;
-    margin-left: 2rem;
+    margin-left: 2.4rem;
     line-height: 25px;
     font-size: 18px;
     font-weight: 400;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     position: absolute;
 }
-
-
 .button{
     position: relative;
     padding:15px 15px;
     border:transparent;
     font-weight: 500;
     text-transform: capitalize;
-
     background: #ca3e47 ;
     color:white;
     font-size: 15px;
     border-radius: 5px;
     font-weight: 500;
-    z-index: 77;
+    cursor: pointer;
 }
 .button:hover{
-    background: rgba(15, 15, 15,.7);
+    background: linear-gradient(to right,#ca3e47,#e45660);
 }
-// .button:hover{
-//     background: rgba(15, 15, 15);
-// }
+
 .allCourses{
     position: absolute;
-    top:57%;
-    left:6.9%;
+    bottom:-3rem;
+    left:1.5rem;
     width:25rem;
     transform: translate(-6.9%,-57%);
 }
@@ -61,6 +72,19 @@
     left:.7rem;
     animation: textAnimation .4s infinite alternate;
 }
+.slogan{
+    width:100%;
+}
+.secondPart{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+    transform: rotate(-.5deg);
+}
+.videoContainer{
+    width:85%;
+}
 @keyframes arrowAnimation{
     0%{
         top:-.3rem;
@@ -74,9 +98,33 @@
 
 @keyframes textAnimation{
     0%{
-        width:172px;
+       transform: scale(1);
     }
     100%{
-        width:180px;
+        transform: scale(1.08);
     }
 }
+
+@media only screen and (max-width: 1050px) {
+    .home{
+        background: linear-gradient(to top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.63) 3%,rgba(0,0,0,0) 100%);
+    }
+    .home{
+       flex-direction: column;
+    }
+    .sloganContainer{
+        width:90%;
+    }
+    .allCourses{
+        bottom:-6%;
+        left:1.5rem;
+    }
+    .button{
+        padding:10px 10px;
+        font-size: 15px;
+    }
+    .secondPart{
+        align-items: start;
+    }
+
+  }
