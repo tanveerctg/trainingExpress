@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import classes from './NavBar.module.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import traing_logo from '../../img/Training-Express-White.png';
+import traing_logo from '../../img/TR.jpg';
 
 export default class NavBar extends Component {
     

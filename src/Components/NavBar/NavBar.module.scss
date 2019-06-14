@@ -15,9 +15,9 @@
     width:90%;
     max-width: 100%;
     height:4rem;
-    margin:0 auto;
+    margin:auto auto;
     display:flex;
-    justify-content: start;
+    justify-content: space-evenly;
     align-items: center;
 }
 .item1{
@@ -61,6 +61,7 @@
     font-size:16px;
     border:none;
     width:80%;
+    background: ghostwhite;
 }
 .input:focus{
     outline:none;
@@ -72,8 +73,7 @@
     width:10rem;
 }
 .signinsignup {
-    position: absolute;
-    right: 0;
+
     display: flex;
     width:10rem;
 }
@@ -86,16 +86,18 @@
     margin-right: .5rem;
     cursor: pointer;
     flex: 1;
+    font-weight: 500;
 }
 
 .signUp {
     flex: 1;
     padding: 5px 15px;
-    background: #ca3e47;
+    background: #e41749;
     border: none;
     font-size: 15px;
     color: white;
     cursor: pointer;
+    font-weight: 600;
 }
 .signUp:hover{
     background: #d3454f;
@@ -132,11 +134,32 @@
 //     }
 //  }
 
- @media only screen and (max-width:1050px) {
+@media only screen and (max-width:1360px) {
     .navItem>span{
         margin-right:2rem;
     }
  }
 
+ @media only screen and (max-width:1370px) {
+    .nav{
+        justify-content: center;
+    }
+    .search{
+        margin-left:3rem;
+    }
+    .navItem{
+        display: none;
+    }
+    .signinsignup {
+        display: none;
+    }
+ }
+ @media only screen and (max-width:765px) {
+
+    .search{
+        width:16rem;
+    }
+
+ }
 
 

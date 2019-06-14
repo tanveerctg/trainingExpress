@@ -11,7 +11,6 @@ export default class Home extends Component {
   render() {
     return (
       <div className={classes.home} >
-          {/* <img src={whiteBg} style={{width:'100%',height:'100%'}}/> */}
           <div className={classes.firstPart}>
             <div className={classes.firstPartInfo}>
               <div className={classes.sloganContainer}>
