@@ -1,18 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import { faSearch,faShoppingBasket, faChevronDown} from "@fortawesome/free-solid-svg-icons";
-import { library } from '@fortawesome/fontawesome-svg-core';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./index.css";
+import App from "./App";
+import {
+  faSearch,
+  faShoppingBasket,
+  faChevronDown,
+  faChevronUp
+} from "@fortawesome/free-solid-svg-icons";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import * as serviceWorker from "./serviceWorker";
 
-library.add(
-   faSearch,
-   faShoppingBasket,
-   faChevronDown
-  );
+library.add(faSearch, faShoppingBasket, faChevronDown, faChevronUp);
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App />, document.getElementById("root"));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
