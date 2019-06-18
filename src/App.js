@@ -1,14 +1,16 @@
 import React from 'react';
 import './App.css';
 import Layout from './Components/Layout/Layout';
-import Home from './Components/Home/Home';
+import LandingPage from './Containers/LandingPage/LandingPage';
+import Features from './Containers/Features/Features';
 
 function App() {
 
   return (
     <div className="App" >
       <Layout>
-        <Home />
+        <LandingPage />
+        <Features />
       </Layout>
     </div>
   );

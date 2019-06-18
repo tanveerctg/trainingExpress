@@ -1,0 +1,81 @@
+.container{
+    background-image:linear-gradient(to right,rgba(27, 27, 27, 0.85),rgba(27, 27, 27, 0.7)),url('../../img/wave.png'); 
+    width:100%;
+    height:100%;
+    clip-path: polygon(0 2%, 100% 0%, 100% 98%, 0% 100%);
+    margin-top:-2.6rem; 
+}
+.wrapper{
+    width:85%;
+    height:100%;
+    margin:0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.firstPart{
+    background: white;
+    width:100%;
+    height:100%;
+    color:white;
+}
+.secondPart{
+    background: black;
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.secondPartWrapper{
+    background: red;
+    width:90%;
+    height:100%;
+    text-align: center;
+}
+.title{
+    position: relative;
+    display: inline-block;
+    text-align: center;
+    position: relative;
+    background: #ffbd39;
+    text-transform: uppercase;
+    font-size: 3rem;
+    transform: rotate(-2.5deg);
+    padding: .5rem 1.5rem;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.title::before{
+    position: absolute;
+    content: "";
+    width:100%;
+    height:100%;
+    top:3%;
+    left:0;
+    z-index: -2;
+    background: white;
+    transform: rotate(2.5deg);
+}
+
+.points{
+    max-width:30rem;
+    height:40rem;
+    background: white;
+    margin: 3rem auto;
+}
+
+@media only screen and (max-width: 800px) {
+    .wrapper{
+        width:95%;
+    }
+}
+@media only screen and (max-width: 700px) {
+    .wrapper{
+        grid-template-columns: 1fr ;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .wrapper{
+        grid-template-columns: 1fr ;
+    }
+}
