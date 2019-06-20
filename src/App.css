@@ -2,5 +2,10 @@
   margin:0;
   padding:0;
   box-sizing:border-box;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   /* max-width: 100%; */
+}
+.slick-prev:before,
+.slick-next:before {
+  color: black!important;
 }

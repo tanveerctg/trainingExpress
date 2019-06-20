@@ -15,12 +15,53 @@ export default function Features() {
 
                     <div className={classes.firstPartWrapper}>
                         <section className={classes.firstSection}>
-                            <div className={classes.firstAid}>First Aid</div>
-                            <div className={classes.safeGuarding}>Safeguarding</div>
+                            <div className={classes.firstAid}>
+                                <div className={classes.icon}>
+                                    <img src="https://www.trainingexpress.org.uk/wp-content/uploads/2019/06/first-aid-kit.png"/>
+                                </div>
+                                <h2 className={classes.categoryName}>
+                                    First Aid
+                                </h2>
+                                <div className={classes.categoryDetails}>
+                                    Explore our comprehensive library of accredited first aid online training courses.
+                                </div> 
+                            </div>
+                            <div className={classes.safeGuarding}>
+                                <div className={classes.icon}>
+                                    <img src="https://www.trainingexpress.org.uk/wp-content/uploads/2019/06/Safeguarding.png"/>
+                                </div>
+                                <h2 className={classes.categoryName}>
+                                    Safeguarding
+                                </h2>
+                                <div className={classes.categoryDetails}>
+                                Study the principles of safeguarding children and vulnerable adults, with courses of all levels.
+                                </div>
+                               
+                            </div>
                         </section>
                         <section className={classes.secondSection}>
-                            <div className={classes.health}>Health</div>
-                            <div className={classes.foodHygiene}>foodHygiene</div>
+                            <div className={classes.health}>
+                                <div className={classes.icon}>
+                                    <img src="https://www.trainingexpress.org.uk/wp-content/uploads/2019/06/Health-Safety.png"/>
+                                </div>
+                                <h2 className={classes.categoryName}>
+                                    Health and Safety
+                                </h2>
+                                <div className={classes.categoryDetails}>
+                                    Workplace training covering fire safety, risk management, manual handling and more.
+                                </div> 
+                            </div>
+                            <div className={classes.foodHygiene}>
+                            <div className={classes.icon}>
+                                    <img src="https://www.trainingexpress.org.uk/wp-content/uploads/2019/06/Food-Hygiene.png"/>
+                                </div>
+                                <h2 className={classes.categoryName}>
+                                    Food Hygiene
+                                </h2>
+                                <div className={classes.categoryDetails}>
+                                    Browse our extensive online range of certified food hygiene and safety training courses.
+                                </div>
+                            </div>
                         </section>
                     </div>
 

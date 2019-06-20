@@ -1,0 +1,19 @@
+.container{
+    width:100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.wrapper{
+    max-width:55rem;
+}
+.item{
+    background:green;
+    height:20rem;
+    // margin-right:2rem;
+}
+.slick-arrow {
+    color: black
+    /* color: black; */
+  }
