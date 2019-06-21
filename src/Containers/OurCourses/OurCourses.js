@@ -9,12 +9,12 @@ export default class OurCourses extends Component {
             dots: true,
             infinite: true,
             speed: 500,
-            slidesToShow: 3,
-            slidesToScroll: 3,
+            slidesToShow: 4,
+            slidesToScroll: 4,
             initialSlide: 0,
             responsive: [
               {
-                breakpoint: 1024,
+                breakpoint: 1160,
                 settings: {
                   slidesToShow: 3,
                   slidesToScroll: 3,
@@ -23,7 +23,7 @@ export default class OurCourses extends Component {
                 }
               },
               {
-                breakpoint: 600,
+                breakpoint: 800,
                 settings: {
                   slidesToShow: 2,
                   slidesToScroll: 2,
@@ -44,48 +44,48 @@ export default class OurCourses extends Component {
                 <div className={classes.wrapper}>
                     <Slider {...settings}>
                         <div >
-                            <div style={{margin:'0 10px'}}>
+                            <div className={classes.itemContainer}>
                                 <h3 className={classes.item}>1</h3>
                             </div>
                          
                         </div>
                         <div >
-                        <div style={{margin:'0 10px'}}>
+                        <div className={classes.itemContainer}>
                                 <h3 className={classes.item}>2</h3>
                             </div>
                         </div>
                         <div >
-                        <div style={{margin:'0 10px'}}>
+                        <div className={classes.itemContainer}>
                                 <h3 className={classes.item}>3</h3>
                             </div>
                         </div>
                         <div >
-                        <div style={{margin:'0 10px'}}>
+                        <div className={classes.itemContainer}>
                                 <h3 className={classes.item}>4</h3>
                             </div>
                         </div>
                         <div >
-                        <div style={{margin:'0 10px'}}>
+                        <div className={classes.itemContainer}>
                                 <h3 className={classes.item}>5</h3>
                             </div>
                         </div>
                         <div >
-                        <div style={{margin:'0 10px'}}>
+                        <div className={classes.itemContainer}>
                                 <h3 className={classes.item}>6</h3>
                             </div>
                         </div>
                         <div >
-                        <div style={{margin:'0 10px'}}>
+                        <div className={classes.itemContainer}>
                                 <h3 className={classes.item}>7</h3>
                             </div>
                         </div>
                         <div >
-                        <div style={{margin:'0 10px'}}>
+                        <div className={classes.itemContainer}>
                                 <h3 className={classes.item}>8</h3>
                             </div>
                         </div>
                         <div >
-                        <div style={{margin:'0 10px'}}>
+                        <div className={classes.itemContainer}>
                                 <h3 className={classes.item}>9</h3>
                             </div>
                         </div>
