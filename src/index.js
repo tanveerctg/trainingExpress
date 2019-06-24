@@ -6,12 +6,14 @@ import {
   faSearch,
   faShoppingBasket,
   faChevronDown,
-  faChevronUp
+  faChevronUp,
+  faStar,
+  faStarHalf
 } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import * as serviceWorker from "./serviceWorker";
 
-library.add(faSearch, faShoppingBasket, faChevronDown, faChevronUp);
+library.add(faSearch, faShoppingBasket, faChevronDown, faChevronUp,  faStar,faStarHalf);
 
 ReactDOM.render(<App />, document.getElementById("root"));
 

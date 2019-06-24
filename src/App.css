@@ -1,12 +1,15 @@
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  /* width: 100%; */
-   /* position: relative; */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+
 .slick-prev:before,
 .slick-next:before {
-  color: black!important;
+    color: black !important;
 }
+
+/* .App {
+    max-width: 100%;
+} */
